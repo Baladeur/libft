@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 17:40:01 by tferrieu          #+#    #+#             */
-/*   Updated: 2018/11/23 15:36:18 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/03/05 10:14:33 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,5 +150,9 @@ t_list			*ft_table_to_list(char **table, int len);
 void			ft_putlst(t_list *lst);
 
 char			*ft_strjoin_free(char **s1, char **s2, int d);
+
+# define BUFF_SIZE 1000
+
+int				get_next_line(const int fd, char **line);
 
 #endif
