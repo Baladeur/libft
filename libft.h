@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 17:40:01 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/03/05 10:14:33 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/03/05 15:07:10 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,10 @@ void			ft_putstr(char const *s);
 void			ft_putendl(char const *s);
 
 void			ft_putnbr(int n);
+
+void			ft_putint(long long int n);
+
+void			ft_putunisgned(unsigned long long int n);
 
 void			ft_putchar_fd(char c, int fd);
 
