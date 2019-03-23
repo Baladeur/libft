@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 11:03:26 by tferrieu          #+#    #+#             */
-/*   Updated: 2018/11/15 17:36:01 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/03/23 21:01:28 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_bzero(void *s, size_t n)
 
 	e = (char *)s;
 	i = 0;
-	while (i < (int)(n / sizeof(char)))
+	while (i < (int)n)
 	{
 		*e = 0;
 		e++;

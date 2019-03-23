@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 18:42:02 by tferrieu          #+#    #+#             */
-/*   Updated: 2018/11/15 17:34:47 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/03/23 21:01:47 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memalloc(size_t size)
 	i = 0;
 	if (!(mem = (void*)malloc(size)))
 		return (NULL);
-	while (i < (int)(size / sizeof(char)))
+	while (i < (int)size)
 	{
 		*(char *)(mem + i) = 0;
 		i++;

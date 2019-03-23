@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 11:25:14 by tferrieu          #+#    #+#             */
-/*   Updated: 2018/11/15 17:17:18 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/03/23 21:03:05 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	i = 0;
 	if (src < dst)
 	{
-		while (i < (int)(len / sizeof(char)))
+		while (i < (int)len)
 		{
 			i++;
 			dst++;
