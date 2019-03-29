@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 17:40:01 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/03/29 15:14:12 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/03/29 18:19:58 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
+# include <stdarg.h>
 
 typedef struct	s_list
 {
@@ -164,5 +165,7 @@ char			*ft_strnset(char *dest, char c, size_t size);
 # define BUFF_SIZE 1000
 
 int				get_next_line(const int fd, char **line);
+
+int				biggest_int(int nb, ...);
 
 #endif
