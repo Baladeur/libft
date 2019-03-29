@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 17:40:01 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/03/24 19:38:36 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/03/29 15:14:12 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,8 @@ void			ft_putnbr_fd(int n, int fd);
 size_t			ft_strlen(const char *s);
 
 char			*ft_strdup(const char *s1);
+
+char			*ft_strndup(const char *s1, size_t size);
 
 char			*ft_strcpy(char *dst, const char *src);
 
