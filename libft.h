@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 17:40:01 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/04/02 16:07:31 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/04/03 18:44:16 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ int				ft_getpow(int nb, int pow);
 
 char			*ft_itoa(int n);
 
-char			*ft_itobase_hh(unsigned char n, char *base);
+char			*ft_getbase(char id);
 
-char			*ft_itobase_h(unsigned short int n, char *base);
+char			*ft_itobase_hh(int n, char *base);
 
 char			*ft_itobase(unsigned int n, char *base);
 
