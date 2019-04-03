@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 17:40:01 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/03/29 18:19:58 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/04/02 16:07:31 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,19 @@ int				ft_isprint(int c);
 
 int				ft_pow(int nb, int pow);
 
+int				ft_getpow(int nb, int pow);
+
 char			*ft_itoa(int n);
 
-char			*ft_itobase(unsigned long long int n, char *base);
+char			*ft_itobase_hh(unsigned char n, char *base);
+
+char			*ft_itobase_h(unsigned short int n, char *base);
+
+char			*ft_itobase(unsigned int n, char *base);
+
+char			*ft_itobase_l(unsigned long int n, char *base);
+
+char			*ft_itobase_ll(unsigned long long int n, char *base);
 
 void			*ft_memalloc(size_t size);
 

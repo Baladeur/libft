@@ -6,13 +6,125 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/24 15:38:19 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/03/24 16:59:38 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/04/02 16:04:25 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itobase(unsigned long long int n, char *base)
+char	*ft_itobase_hh(unsigned char n, char *base)
+{
+	unsigned char	tmp;
+	int				len_base;
+	int				len_nb;
+	int				k;
+	char			*nb;
+
+	len_base = ft_strlen(base);
+	len_nb = 1;
+	tmp = n;
+	while (tmp >= (unsigned char)len_base && (tmp = tmp / len_base))
+		len_nb++;
+	if (!(nb = ft_strnew(len_nb)))
+		return (NULL);
+	tmp = n;
+	k = len_nb - 1;
+	while (tmp > 0)
+	{
+		nb[k] = base[tmp % len_base];
+		tmp /= len_base;
+		k--;
+	}
+	if (n == 0)
+		nb[0] = '0';
+	return (nb);
+}
+
+char	*ft_itobase_h(unsigned short int n, char *base)
+{
+	unsigned short int	tmp;
+	int					len_base;
+	int					len_nb;
+	int					k;
+	char				*nb;
+
+	len_base = ft_strlen(base);
+	len_nb = 1;
+	tmp = n;
+	while (tmp >= (unsigned short int)len_base && (tmp = tmp / len_base))
+		len_nb++;
+	if (!(nb = ft_strnew(len_nb)))
+		return (NULL);
+	tmp = n;
+	k = len_nb - 1;
+	while (tmp > 0)
+	{
+		nb[k] = base[tmp % len_base];
+		tmp /= len_base;
+		k--;
+	}
+	if (n == 0)
+		nb[0] = '0';
+	return (nb);
+}
+
+char	*ft_itobase(unsigned int n, char *base)
+{
+	unsigned int	tmp;
+	int				len_base;
+	int				len_nb;
+	int				k;
+	char			*nb;
+
+	len_base = ft_strlen(base);
+	len_nb = 1;
+	tmp = n;
+	while (tmp >= (unsigned int)len_base && (tmp = tmp / len_base))
+		len_nb++;
+	if (!(nb = ft_strnew(len_nb)))
+		return (NULL);
+	tmp = n;
+	k = len_nb - 1;
+	while (tmp > 0)
+	{
+		nb[k] = base[tmp % len_base];
+		tmp /= len_base;
+		k--;
+	}
+	if (n == 0)
+		nb[0] = '0';
+	return (nb);
+}
+
+char	*ft_itobase_l(unsigned long int n, char *base)
+{
+	unsigned long int	tmp;
+	int					len_base;
+	int					len_nb;
+	int					k;
+	char				*nb;
+
+	len_base = ft_strlen(base);
+	len_nb = 1;
+	tmp = n;
+	while (tmp >= (unsigned long int)len_base && (tmp = tmp / len_base))
+		len_nb++;
+	if (!(nb = ft_strnew(len_nb)))
+		return (NULL);
+	tmp = n;
+	k = len_nb - 1;
+	while (tmp > 0)
+	{
+		nb[k] = base[tmp % len_base];
+		tmp /= len_base;
+		k--;
+	}
+	if (n == 0)
+		nb[0] = '0';
+	return (nb);
+}
+
+char	*ft_itobase_ll(unsigned long long int n, char *base)
 {
 	unsigned long long int	tmp;
 	int						len_base;

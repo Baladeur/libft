@@ -6,7 +6,7 @@
 #    By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 13:50:26 by tferrieu          #+#    #+#              #
-#    Updated: 2019/03/29 18:18:47 by tferrieu         ###   ########.fr        #
+#    Updated: 2019/04/03 14:09:44 by tferrieu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ SRC		=	ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 			ft_strstr.c ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c \
 			ft_splitcharset.c ft_root.c ft_table_to_list.c ft_putlst.c \
 			ft_strjoin_free.c get_next_line.c ft_itobase.c ft_strmake.c \
-			ft_strset.c ft_strnset.c ft_strndup.c biggest_int.c
+			ft_strset.c ft_strnset.c ft_strndup.c biggest_int.c ft_getpow.c
 
 OBJ		=	$(SRC:.c=.o)
 
@@ -40,7 +40,7 @@ all :		$(NAME)
 
 $(NAME) :	$(OBJ) libft.h
 			$(CC) $(FLAG_CC) $(SRC)
-			$(AR) $(NAME) $(OBJ) $(SANI)
+			$(AR) $(NAME) $(OBJ)
 
 clean :
 			/bin/rm -Rf $(OBJ)
