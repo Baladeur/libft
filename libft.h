@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 17:40:01 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/04/04 17:42:52 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/04/04 17:44:10 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@
 # include <string.h>
 # include <stdarg.h>
 
-typedef struct	s_list
+typedef struct			s_list
 {
 	void			*content;
 	size_t			content_size;
 	struct s_list	*next;
-}				t_list;
+}						t_list;
 
 int						ft_tolower(int c);
 
