@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 15:38:29 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/04/02 15:40:22 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/04/04 14:02:19 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_getpow(int nb, int pow)
 
 	k = 1;
 	n = nb;
-	while (n > pow)
+	while (n >= pow)
 	{
 		n /= pow;
 		k++;
