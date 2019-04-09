@@ -6,14 +6,14 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 18:40:22 by tferrieu          #+#    #+#             */
-/*   Updated: 2018/11/15 17:33:35 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/04/09 21:46:25 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_pow(int nb, int pow)
+long long int	ft_pow(int nb, int pow)
 {
 	int i;
-	int n;
+	long long int n;
 
 	n = 1;
 	i = 0;

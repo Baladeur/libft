@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 17:40:01 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/04/04 17:44:10 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/04/09 21:46:16 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int						ft_isascii(int c);
 
 int						ft_isprint(int c);
 
-int						ft_pow(int nb, int pow);
+long long int			ft_pow(int nb, int pow);
 
 unsigned int			ft_abs(int nb);
 
