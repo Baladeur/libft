@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/29 15:11:04 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/03/29 15:15:26 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:23:01 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strndup(const char *s1, size_t size)
 		str[i] = s1[i];
 		i++;
 	}
-	while (i < (int)size)
+	while (i < (int)size + 1)
 	{
 		str[i] = '\0';
 		i++;
