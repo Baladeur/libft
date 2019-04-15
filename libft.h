@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 17:40:01 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/04/15 15:25:59 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/04/15 18:39:49 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,6 +120,8 @@ int						ft_strcmp(const char *s1, const char *s2);
 int						ft_strncmp(const char *s1, const char *s2, size_t n);
 
 int						ft_atoi(const char *str);
+
+long int				ft_atoi_l(const char *str);
 
 void					ft_striter(char *s, void (*f)(char *));
 
