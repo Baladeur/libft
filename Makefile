@@ -6,7 +6,7 @@
 #    By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 13:50:26 by tferrieu          #+#    #+#              #
-#    Updated: 2019/04/04 17:23:37 by tferrieu         ###   ########.fr        #
+#    Updated: 2019/04/15 15:10:24 by tferrieu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,8 @@ SRC		=	ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 			ft_splitcharset.c ft_root.c ft_table_to_list.c ft_putlst.c \
 			ft_strjoin_free.c get_next_line.c ft_itobase.c ft_strmake.c \
 			ft_strset.c ft_strnset.c ft_strndup.c biggest_int.c ft_getpow.c \
-			ft_getbase.c ft_abs.c
+			ft_getbase.c ft_abs.c ft_printf.c parsing.c convert_cs.c \
+			convert_float.c convert_int.c convert_oux.c convert_p.c scanning.c
 
 OBJ		=	$(SRC:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: tferrieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 17:40:01 by tferrieu          #+#    #+#             */
-/*   Updated: 2019/04/10 18:52:33 by tferrieu         ###   ########.fr       */
+/*   Updated: 2019/04/15 15:25:59 by tferrieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,8 +127,8 @@ void					ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 char					*ft_strmap(char const *s, char (*f)(char));
 
-char					*ft_strmapi(char const *s, char (*f)(unsigned int,
-																char));
+char					*ft_strmapi(char const *s,
+									char (*f)(unsigned int, char));
 
 char					*ft_strnew(size_t size);
 
@@ -157,8 +157,8 @@ size_t					ft_strlcat(char *s1, const char *s2, size_t n);
 
 t_list					*ft_lstnew(void const *content, size_t content_size);
 
-void					ft_lstdelone(t_list **alst, void (*del)(void *,
-																size_t));
+void					ft_lstdelone(t_list **alst,
+									void (*del)(void *, size_t));
 
 void					ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 
@@ -189,5 +189,43 @@ char					*ft_strnset(char *dest, char c, size_t size);
 int						get_next_line(const int fd, char **line);
 
 int						biggest_int(int nb, ...);
+
+/*
+**	ft_printf and utilities
+*/
+
+typedef struct			s_printable
+{
+	char				*str;
+	int					len_str;
+	int					len_flag;
+	struct s_printable	*next;
+}						t_printable;
+
+void					update_flags(const char *restrict format, int *tab,
+									char c, int *i);
+
+char					*convert_float(va_list arglist, t_printable *args,
+									int *tab);
+
+char					*convert_int(va_list arglist, t_printable *args,
+									int *tab);
+
+char					*convert_unsigned(va_list arglist, t_printable *args,
+									int *tab, char id);
+
+char					*convert_char(va_list arglist, t_printable *args,
+									int *tab, int p);
+
+char					*convert_str(va_list arglist, t_printable *args,
+									int *tab);
+
+char					*convert_ptr(va_list arglist, t_printable *args,
+									int *tab);
+
+int						parse(const char *restrict format, va_list arglist,
+									int *len, t_printable **args);
+
+int						ft_printf(const char *restrict format, ...);
 
 #endif
