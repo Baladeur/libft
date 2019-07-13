@@ -36,7 +36,7 @@ OBJ		=	$(SRC:.c=.o)
 
 NAME	=	libft.a
 
-CFLAGS	=	-c -Wall -Werror -Wextra
+CFLAGS	=	-Wall -Werror -Wextra
 
 all :		$(NAME)
 
