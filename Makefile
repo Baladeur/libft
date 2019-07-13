@@ -36,12 +36,11 @@ OBJ		=	$(SRC:.c=.o)
 
 NAME	=	libft.a
 
-FLAG_CC	=	-c -Wall -Werror -Wextra
+CFLAGS	=	-c -Wall -Werror -Wextra
 
 all :		$(NAME)
 
 $(NAME) :	$(OBJ) libft.h
-			$(CC) $(FLAG_CC) $(SRC)
 			$(AR) $(NAME) $(OBJ)
 
 clean :
