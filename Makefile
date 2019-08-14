@@ -44,9 +44,9 @@ $(NAME) :	$(OBJ) libft.h
 			$(AR) $(NAME) $(OBJ)
 
 clean :
-			/bin/rm -Rf $(OBJ)
+			@/bin/rm -Rf $(OBJ)
 
 fclean :	clean
-			/bin/rm -Rf $(NAME)
+			@/bin/rm -Rf $(NAME)
 
 re :		fclean all
